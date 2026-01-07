@@ -1,0 +1,29 @@
+@layer components {
+  .appCard {
+    @apply relative border border-border bg-card p-5 transition;
+  }
+
+  .appCard:hover {
+    @apply bg-card/80;
+  }
+
+  .appCardTitle {
+    @apply text-lg font-semibold tracking-tight;
+  }
+
+  .appCardDesc {
+    @apply mt-2 text-sm leading-relaxed text-muted-foreground;
+  }
+
+  .appCardPixelFrame {
+    box-shadow:
+      0 0 0 2px rgba(255, 255, 255, 0.16),
+      0 12px 28px rgba(0, 0, 0, 0.25);
+  }
+
+  .appCardBadge {
+    @apply inline-flex items-center border border-border bg-card px-2.5 py-1 text-xs text-muted-foreground;
+  }
+}
+
+

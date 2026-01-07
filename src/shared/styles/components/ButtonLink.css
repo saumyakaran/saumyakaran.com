@@ -1,0 +1,52 @@
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-ring/30;
+  }
+
+  .btnPrimary {
+    @apply bg-primary text-primary-foreground hover:opacity-90;
+  }
+
+  .btnSecondary {
+    @apply bg-secondary text-secondary-foreground hover:opacity-90;
+  }
+
+  .btnGhost {
+    @apply border-none bg-transparent text-primary hover:bg-primary/10;
+  }
+
+  .btnOutline {
+    @apply border border-border bg-card text-foreground hover:bg-card/80;
+  }
+
+  .btnCampfirePrimary {
+    background: var(--campfire-cream);
+    color: var(--campfire-ink);
+  }
+
+  .btnCampfirePrimary:disabled,
+  .btnCampfirePrimary.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .btnCampfirePrimary:disabled:hover,
+  .btnCampfirePrimary.disabled:hover {
+    filter: none;
+  }
+
+  .btnCampfirePrimary:hover:not(:disabled):not(.disabled) {
+    filter: brightness(0.97);
+  }
+
+  .btnCampfireGhost {
+    border: 1px solid rgba(231, 213, 179, 0.25);
+    background: rgba(231, 213, 179, 0.06);
+    color: var(--campfire-white);
+  }
+
+  .btnCampfireGhost:hover {
+    background: rgba(231, 213, 179, 0.12);
+  }
+}

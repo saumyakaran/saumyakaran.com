@@ -1,0 +1,15 @@
+@layer components {
+  .section {
+    @apply py-10 sm:py-14;
+  }
+
+  .sectionTitle {
+    @apply text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground;
+  }
+
+  .sectionBody {
+    @apply mt-4;
+  }
+}
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps — Saumya Karan</title>
+    <meta
+      name="description"
+      content="Apps by Saumya Karan. Currently: Campfire, a quiet 30-minute focus timer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body class="page">
+    <div class="pageInner">
+      <header class="siteHeader">
+        <div class="siteHeaderInner">
+          <a class="siteTitle" href="/">Saumya Karan</a>
+          <nav class="flex items-center gap-5">
+            <a class="navLink" href="/apps/">Apps</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="pageMain">
+        <div class="containerShell">
+          <section class="section">
+            <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
+              Apps
+            </h1>
+            <p class="mt-3 text-sm text-muted-foreground sm:text-base">
+              Small, focused tools. No clutter.
+            </p>
+          </section>
+
+          <section class="section pt-2">
+            <div class="sectionBody">
+              <article class="appCard">
+                <div class="flex items-start justify-between gap-6">
+                  <div>
+                    <div class="appCardBadge">iOS</div>
+                    <h2 class="appCardTitle mt-3">Campfire</h2>
+                    <p class="appCardDesc">A quiet 30-minute focus timer.</p>
+                  </div>
+                  <img
+                    src="/apps/campfire/icon.png"
+                    alt="Campfire"
+                    class="hidden h-16 w-16 border border-border sm:block"
+                    aria-hidden="true"
+                  />
+                </div>
+
+                <div class="mt-5 flex flex-wrap gap-3">
+                  <a class="btn btnGhost" href="/apps/campfire/">View →</a>
+                  <a class="btn btnGhost" href="/support/campfire/">Support</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="siteFooter">
+        <div class="containerShell">© 2026 Saumya Karan</div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
