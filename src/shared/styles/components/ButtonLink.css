@@ -7,12 +7,28 @@
     @apply bg-primary text-primary-foreground hover:opacity-90;
   }
 
+  .btnPrimary:disabled,
+  .btnPrimary.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .btnPrimary:disabled:hover,
+  .btnPrimary.disabled:hover {
+    opacity: 0.5;
+  }
+
   .btnSecondary {
     @apply bg-secondary text-secondary-foreground hover:opacity-90;
   }
 
   .btnGhost {
     @apply border-none bg-transparent text-primary hover:bg-primary/10;
+  }
+
+  .btnLink {
+    @apply inline-flex items-center p-0 text-primary no-underline focus:outline-none focus:ring-2 focus:ring-ring/30;
   }
 
   .btnOutline {
@@ -48,5 +64,17 @@
 
   .btnCampfireGhost:hover {
     background: rgba(231, 213, 179, 0.12);
+  }
+
+  .linkWithArrow {
+    @apply inline-flex items-center;
+  }
+
+  .linkWithArrow .arrow {
+    @apply inline-block transition-transform duration-200;
+  }
+
+  .linkWithArrow:hover .arrow {
+    transform: translateX(4px);
   }
 }

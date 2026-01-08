@@ -10,13 +10,11 @@
     />
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
-  <body class="page theme-campfire">
+  <body class="page">
     <div class="pageInner">
       <header class="siteHeader">
         <div class="siteHeaderInner">
-          <a class="siteTitle" href="/" style="color: rgba(231, 213, 179, 0.95)"
-            >Saumya Karan</a
-          >
+          <a class="siteTitle" href="/">Saumya Karan</a>
           <nav class="flex items-center gap-5">
             <a class="navLink" href="/apps/">Apps</a>
             <a class="navLink" href="/support/campfire/">Support</a>
@@ -27,41 +25,33 @@
       <main class="pageMain">
         <div class="containerShell">
           <section class="section">
-            <div class="campfireSurface p-7 sm:p-10">
-              <div class="campfireKicker">Campfire</div>
-              <h1
-                class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl"
-              >
-                A quiet 30-minute focus timer.
-              </h1>
-              <p
-                class="mt-4 text-sm leading-relaxed text-white/80 sm:text-base"
-              >
-                Tap anywhere to begin. Keep your phone locked. Leave the app and
-                the session ends—on purpose.
-              </p>
+            <div class="sectionTitle">Campfire</div>
+            <h1 class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+              A quiet 30-minute focus timer.
+            </h1>
+            <p class="mt-4 text-base text-muted-foreground sm:text-lg">
+              Tap anywhere to begin. Keep your phone locked. Leave the app and
+              the session ends—on purpose.
+            </p>
 
-              <div class="mt-6 flex flex-wrap gap-3">
-                <a
-                  class="btn btnCampfirePrimary disabled"
-                  href="#"
-                  aria-label="Download Campfire on the App Store (placeholder)"
-                  aria-disabled="true"
-                  tabindex="-1"
-                  >Coming soon to the App Store</a
-                >
-                <!-- <a class="btn btnCampfireGhost" href="/support/campfire/"
-                  >Support / Contact</a
-                > -->
-              </div>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a
+                class="btn btnPrimary disabled"
+                href="#"
+                aria-label="Download Campfire on the App Store (placeholder)"
+                aria-disabled="true"
+                tabindex="-1"
+                >Coming soon to the App Store</a
+              >
+              <!-- <a class="btn btnGhost" href="/support/campfire/"
+                >Support / Contact</a
+              > -->
             </div>
           </section>
 
           <section class="section pt-2">
-            <h2 class="sectionTitle" style="color: rgba(231, 213, 179, 0.9)">
-              Screenshots
-            </h2>
-            <div class="screenshotGrid">
+            <h2 class="sectionTitle">Screenshots</h2>
+            <div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
               <img
                 src="/apps/campfire/screenshots/01.png"
                 alt="Campfire"
@@ -111,10 +101,8 @@
           </section>
 
           <section class="section">
-            <h2 class="sectionTitle" style="color: rgba(231, 213, 179, 0.9)">
-              How it works
-            </h2>
-            <ul class="campfireList">
+            <h2 class="sectionTitle">How it works</h2>
+            <ul class="mt-4 list-disc pl-5 text-foreground">
               <li>Tap anywhere to start a 30-minute session</li>
               <li>Session continues while the phone is locked</li>
               <li>
@@ -125,10 +113,8 @@
           </section>
 
           <section class="section pt-2">
-            <h2 class="sectionTitle" style="color: rgba(231, 213, 179, 0.9)">
-              Privacy
-            </h2>
-            <ul class="campfireList">
+            <h2 class="sectionTitle">Privacy</h2>
+            <ul class="mt-4 list-disc pl-5 text-foreground">
               <li>No accounts</li>
               <li>No tracking</li>
               <li>Data stays on device</li>
@@ -136,18 +122,16 @@
           </section>
 
           <section class="section pt-2">
-            <h2 class="sectionTitle" style="color: rgba(231, 213, 179, 0.9)">
-              Support
-            </h2>
-            <p class="mt-4 text-white/85">
+            <h2 class="sectionTitle">Support</h2>
+            <p class="mt-4">
               Email:
-              <a
-                href="mailto:curiousqubit@protonmail.com"
-                style="color: rgba(231, 213, 179, 0.95)"
+              <a class="link" href="mailto:curiousqubit@protonmail.com"
                 >curiousqubit@protonmail.com</a
               >
             </p>
-            <p class="mt-2 text-sm text-white/70">I read every message.</p>
+            <p class="mt-2 text-sm text-muted-foreground">
+              I read every message.
+            </p>
           </section>
         </div>
       </main>
